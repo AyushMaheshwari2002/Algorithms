@@ -33,9 +33,10 @@ void linearSearch(int arr[] , int size, int n)
 int main()
 {
     int size;
-    int arr[size];
     cout << "Enter size of the array : ";
     cin >> size;
+      
+    int arr[size];
     
     cout << "Enter the elements in the array : " << endl;
     for(int i = 0; i < size; i++)
