@@ -70,4 +70,66 @@ int main()
 }
 
 
+/* IMPLEMENTATION OF BINARY SEARCH ON SORTED ARRAY (RECURSIVE APPROACH)
+
+#include <iostream>
+using namespace std;
+
+int binarySearch(int arr[] , int start , int end , int n)
+{
+    while(start <= end)
+    {
+        int mid = (start + end) / 2;
+        
+        if(n == arr[mid])
+        {
+            return mid;
+        }
+        else if(n < arr[mid])
+        {
+            return binarySearch(arr , start , mid - 1 , n);            // move to left side 
+        }
+        else 
+        {
+            return binarySearch(arr , mid + 1 , end , n);        // move to right side
+        }
+    }
+    return -1;
+}
+
+int main()
+{
+    int size;
+    
+    cout << "Enter size of the array : ";
+    cin >> size;
+    
+    int arr[size];
+    
+    cout << "Enter the elements in the array : " << endl;
+    for(int i = 0; i < size; i++)
+    {
+        cin >> arr[i];
+    }
+    
+    int key;
+    cout << "\nEnter the element which you want to search : ";
+    cin >> key;
+    
+    int index = binarySearch(arr , 0 , size - 1 , key);
+    
+    if(index != -1)
+    {
+        cout << "Element is found at index : " << index << endl;
+    }
+    else 
+    {
+        cout << "Element not Found!!!" << endl;
+    }
+    
+    return 0;
+}
+
+
+
 
