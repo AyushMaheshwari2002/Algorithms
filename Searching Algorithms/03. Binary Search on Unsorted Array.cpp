@@ -86,7 +86,7 @@ int main()
 
 
 
-/* IMPLEMENTATION OF BINARY SEARCH ON UNSORTED ARRAY (RECURSIVE APPROACH)
+// IMPLEMENTATION OF BINARY SEARCH ON UNSORTED ARRAY (RECURSIVE APPROACH)
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -170,6 +170,6 @@ int main()
     
     return 0;
 }
-*/
+
 
 
