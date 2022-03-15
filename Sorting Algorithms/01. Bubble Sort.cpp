@@ -14,7 +14,7 @@ void bubbleSort(int arr[] , int size)
 {
     for(int i = 0; i < size-1; i++)
     {
-        int flag = 0;                //flag to detect any swap is there or no
+        int flag = 0;                //flag to detect any swap is there or not
         for(int j = 0; j < size-1-i; j++)
         {
             if(arr[j] > arr[j+1])
@@ -24,7 +24,7 @@ void bubbleSort(int arr[] , int size)
             }
         }
         
-        if(flag == 0)                  // No swap in this pass, so array is sorted
+        if(flag == 0)                  // if there will be NO swap in any pass, so array is sorted
             break;
     }
 }
