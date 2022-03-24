@@ -1,7 +1,8 @@
-/* 
-
-
-
+/*    IMPLEMENTATION OF QUICK SORT
+      
+      Time Complexity :
+            Best Case / Average Case  : O(n logn)
+            Worst Case  : O(N^2)
 */
 
 
