@@ -2,7 +2,7 @@
     Topological Sorting is applicable only for DAG(Directed Acyclic Graph).
 
     Time Complexity: O(N + E)           where N = Number of node, E = Number of Edges
-    Space Complexity: O(N) + O(N)       Visited Array and Queue data structure. Both will be using O(N).
+    Space Complexity: O(N) + O(N)       Indegree Array and Queue data structure. Both will be using O(N).
 */
 
 
