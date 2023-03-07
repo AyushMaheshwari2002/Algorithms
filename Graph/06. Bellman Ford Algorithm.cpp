@@ -43,7 +43,7 @@ vector<int> bellman_ford(int n, vector<vector<int>>& adjList, int src)
         if(dist[u] != 1e9 && dist[u] + wt < dist[v]) {
           cout << "\nGraph contains negative weight cycle!!!" << endl;
           return {-1};
-		    }
+	}
     }
     
     return dist;
